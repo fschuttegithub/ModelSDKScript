@@ -56,7 +56,6 @@ While the script runs, progress messages (app, module, entity, attribute) appear
   - Header row (bold): `moduleName`, `entityName`, `attributeName`, `attributeType`.
   - One row per attribute found on non-persistable entities in that app’s model.
 
-Store this workbook in your GISG evidence repository after each run.
 
 ---
 
