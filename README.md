@@ -1,6 +1,6 @@
 # Mendix Model Extractor
 
-Export Mendix domain models to an Excel workbook so teams can review entity metadata, validate data-classification rules, and provide GISG-compliance evidence.
+Export Mendix domain models to an Excel workbook so teams can review entity metadata, validate data-classification rules, and provide compliance evidence.
 
 ---
 
@@ -22,7 +22,7 @@ Export Mendix domain models to an Excel workbook so teams can review entity meta
 ---
 
 ## Project Setup
-1. Clone or download this repository to a working folder (e.g., `C:\Users\<you>\Documents\TLFS\ModelSDKScript`).
+1. Clone or download this repository to a working folder (e.g., `C:\Users\<you>\Documents\ModelSDKScript`).
 2. Open a terminal in that folder and install dependencies:
    ```bash
    npm install
@@ -64,14 +64,13 @@ Store this workbook in your GISG evidence repository after each run.
 - **Token file missing or empty**: Ensure `config/token.txt` exists and contains a valid PAT.
 - **Forbidden errors when creating a working copy**: Regenerate the PAT with repository access and confirm you are a project member.
 - **`ts-node` or dependencies not found**: Re-run `npm install` from the project root.
-- **Workbook not produced**: Inspect stderr; the script exits with code `1` if any app fails to process.
 
 ---
 
 ## Managing App Configurations
 `config/apps.ts` exports the `appConfigurations` object. Each key/value pair looks like:
 ```ts
-CalculatieEngine: {
+ExampleApp: {
   appId: "00000000-0000-0000-0000-000000000000",
   branch: "main"
 }
