@@ -1,6 +1,6 @@
 # Mendix Model Extractor
 
-Export Mendix domain models to an Excel workbook so teams can review entity metadata, validate data-classification rules, and provide compliance evidence.
+Export Mendix domain models to an Excel workbook so teams can review all attributes from a list of applications at once
 
 ---
 
