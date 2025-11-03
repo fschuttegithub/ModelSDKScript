@@ -9,7 +9,6 @@ export interface AppConfiguration {
 export const appConfigurations: Record<string, AppConfiguration> = {
     AppName: {
         appId: "Your-App-GUID-Here",
-
     },
 
 };
