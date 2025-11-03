@@ -82,14 +82,3 @@ To add an application:
 
 To remove an app, delete its entry from the object.
 
----
-
-## Automation Tips
-- Include `npm ci && npm run start` in your CI pipeline to generate fresh evidence per build.
-- Archive the Excel workbook with your release artifacts.
-- Post-process the workbook (e.g., Power Automate, Python) to flag entities lacking classification metadata or to reconcile with policy inventories.
-
----
-
-## Support
-For platform access issues, contact your Mendix workspace administrators. For script issues or enhancement requests, open an issue in this repository or reach out to the data-governance tooling team.
