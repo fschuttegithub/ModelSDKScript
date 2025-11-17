@@ -6,7 +6,7 @@ Export Mendix domain models to an Excel workbook so teams can review all attribu
 
 ## Features
 - Connects to every Mendix app defined in `config/apps.ts` using the Mendix Platform SDK.
-- Traverses each module, entity, and attribute for persistable entities (temporary data).
+- Traverses each module, entity, and attribute for persistable entities.
 - Writes a single Excel file `results/mendix_model_export.xlsx` with one worksheet per app.
 - Logs progress 
 - Designed for recurring compliance checks and pipeline automation.
