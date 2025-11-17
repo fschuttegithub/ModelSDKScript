@@ -6,9 +6,9 @@ Export Mendix domain models to an Excel workbook so teams can review all attribu
 
 ## Features
 - Connects to every Mendix app defined in `config/apps.ts` using the Mendix Platform SDK.
-- Traverses each module, entity, and attribute for non-persistable entities (temporary data).
+- Traverses each module, entity, and attribute for persistable entities (temporary data).
 - Writes a single Excel file `results/mendix_model_export.xlsx` with one worksheet per app.
-- Logs progress to stderr and fails fast when credentials or permissions are incorrect.
+- Logs progress 
 - Designed for recurring compliance checks and pipeline automation.
 
 ---
@@ -39,7 +39,7 @@ npm run start
 The command will:
 1. Ensure the `results/` directory exists.
 2. For each configured app, create a temporary working copy of the specified branch.
-3. Load the domain model, inspect non-persistable entities, and append rows to that app’s worksheet.
+3. Load the domain model, inspect persistable entities, and append rows to that app’s worksheet.
 4. Save or overwrite `results/mendix_model_export.xlsx`.
 5. Print a success message on stderr when the workbook is written.
 
